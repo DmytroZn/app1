@@ -1,4 +1,4 @@
-- name: Coursework
+- name: coursework
   gather_facts: false
   hosts: [all]
   become: yes
@@ -7,8 +7,8 @@
 
     - name: Create coursework
       docker_container:
-        name: coursework
-        image: znak07/courseworkapp1
+        name: lesson12
+        image: mdsn/lesson12app1
         pull: true
         state: started
         ports:
